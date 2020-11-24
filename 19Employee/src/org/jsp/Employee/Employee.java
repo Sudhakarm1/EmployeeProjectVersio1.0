@@ -23,7 +23,7 @@ public class Employee
 			Class.forName(Pro.getProperty("driver"));
 			Con=DriverManager.getConnection(Pro.getProperty("str2"),Pro);
 			Ptsm=Con.prepareStatement("INSERT INTO Employee VALUES (?,?,?,?)");
-			System.out.println("Enter how many row want to insert ");
+			System.out.println("Enter number how many row want to insert ");
 			int Length=Sc.nextInt();
 			for(int i=0;i<Length;i++)
 			{
